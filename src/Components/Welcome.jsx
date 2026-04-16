@@ -1,8 +1,10 @@
 import React from "react";
 import { LuHeartPulse } from "react-icons/lu";
-import { FaUserGraduate } from "react-icons/fa6";
 import { FaRegFaceSmileBeam } from "react-icons/fa6";
 import { GiWallet } from "react-icons/gi";
+import { SlUser } from "react-icons/sl";
+import { CiFaceSmile } from "react-icons/ci";
+import { BsFillWalletFill } from "react-icons/bs";
 
 const Welcome = () => {
   return (
@@ -29,7 +31,7 @@ const Welcome = () => {
 
       <div className="mt-10 md:mt-14 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-12 w-full">
         <div className="flex flex-col items-center text-center space-y-4 md:space-y-5">
-          <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex items-center justify-center rounded-full border-2 border-dotted border-pink-300 bg-pink-400 text-white">
+          <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex items-center justify-center rounded-full border-2 border-dotted border-pink-300 bg-linear-to-r from-pink-300 to-blue-200 text-white">
             <LuHeartPulse className="text-xl sm:text-2xl md:text-4xl" />
           </div>
           <h1 className="font-semibold text-base md:text-lg">
@@ -42,8 +44,8 @@ const Welcome = () => {
         </div>
 
         <div className="flex flex-col items-center text-center space-y-4 md:space-y-5">
-          <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex items-center justify-center rounded-full border-2 border-dotted border-pink-300 bg-pink-400 text-white">
-            <FaUserGraduate className="text-xl sm:text-2xl md:text-4xl" />
+          <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex items-center justify-center rounded-full border-2 border-dotted border-pink-300 bg-linear-to-r from-pink-300 to-blue-200 text-white">
+            <SlUser className="text-xl sm:text-2xl md:text-4xl" />
           </div>
           <h1 className="font-semibold text-base md:text-lg">
             Qualified Staff
@@ -55,8 +57,8 @@ const Welcome = () => {
         </div>
 
         <div className="flex flex-col items-center text-center space-y-4 md:space-y-5">
-          <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex items-center justify-center rounded-full border-2 border-dotted border-pink-300 bg-pink-400 text-white">
-            <FaRegFaceSmileBeam className="text-xl sm:text-2xl md:text-4xl" />
+          <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex items-center justify-center rounded-full border-2 border-dotted border-pink-300 bg-linear-to-r from-pink-300 to-blue-200 text-white">
+            <CiFaceSmile className="text-xl sm:text-2xl md:text-4xl" />
           </div>
           <h1 className="font-semibold text-base md:text-lg">
             Relaxation Centric
@@ -68,8 +70,8 @@ const Welcome = () => {
         </div>
 
         <div className="flex flex-col items-center text-center space-y-4 md:space-y-5">
-          <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex items-center justify-center rounded-full border-2 border-dotted border-pink-300 bg-pink-400 text-white">
-            <GiWallet className="text-xl sm:text-2xl md:text-4xl" />
+          <div className="w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 flex items-center justify-center rounded-full border-2 border-dotted border-pink-300 bg-linear-to-r from-pink-300 to-blue-200 text-white">
+            <BsFillWalletFill className="text-xl sm:text-2xl md:text-4xl" />
           </div>
           <h1 className="font-semibold text-base md:text-lg">
             Reasonable Costs
