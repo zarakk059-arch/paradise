@@ -61,7 +61,7 @@ const Hero = () => {
         {slides.map((slide, i) => (
           <div
             key={i}
-            className="w-full shrink-0 relative flex items-center justify-center md:flex-row"
+            className="w-full shrink-0 relative flex flex-col md:flex-row items-center justify-center"
           >
             <div className="w-full md:w-1/2 flex justify-center order-1 md:order-2">
               <img
@@ -71,16 +71,14 @@ const Hero = () => {
               />
             </div>
 
-            <div className="relative z-10 w-full md:w-1/2 px-6 md:px-10 lg:px-20 text-center md:text-left space-y-2 md:space-y-3 text-gray-700 order-2 md:order-1">
+            <div className="relative z-10 w-full md:w-1/2 px-6 md:px-10 lg:px-20 text-gray-700 order-2 md:order-1 flex flex-col items-center justify-center text-center md:text-left md:items-start">
               <p className="font-semibold text-sm md:text-base">Beauty & Spa</p>
 
               <h1 className="text-3xl md:text-5xl lg:text-6xl font-sans leading-tight whitespace-nowrap">
                 {slide.title}
               </h1>
 
-              <p className="max-w-sm mx-auto md:mx-0 text-sm md:text-base">
-                {slide.desc}
-              </p>
+              <p className="max-w-sm text-sm md:text-base">{slide.desc}</p>
 
               <button className="hidden md:inline-block mt-6 md:mt-8 px-4 py-2.5 rounded-xl text-white font-semibold bg-linear-to-r from-pink-300 to-blue-300">
                 REQUEST AN APPOINTMENT
