@@ -7,38 +7,48 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="sticky top-0 w-full flex items-center justify-between px-4 md:px-14 py-4 bg-linear-to-r from-pink-300 to-blue-300 z-50">
-      <ul className="hidden md:flex items-center gap-8 ml-10 text-white font-semibold text-sm">
-        <li className="cursor-pointer hover:text-pink-500 transition">HOME</li>
-        <li className="cursor-pointer hover:text-pink-500 transition">
-          SERVICES
-        </li>
-        <li className="cursor-pointer hover:text-pink-500 transition">PAGES</li>
-        <li className="cursor-pointer hover:text-pink-500 transition">
-          GALLERY
-        </li>
-        <li className="cursor-pointer hover:text-pink-500 transition">SHOP</li>
-        <li className="cursor-pointer hover:text-pink-500 transition">BLOGS</li>
-        <li className="cursor-pointer hover:text-pink-500 transition">
-          CONTACTS
-        </li>
-      </ul>
+    <div className="sticky top-0 w-full bg-linear-to-r from-pink-300 to-blue-300 z-50">
+      <div className="max-w-7xl mx-auto flex items-center justify-between px-4 md:px-14 py-4">
+        <ul className="hidden md:flex items-center gap-8 text-white font-semibold text-sm">
+          <li className="cursor-pointer hover:text-pink-500 transition">
+            HOME
+          </li>
+          <li className="cursor-pointer hover:text-pink-500 transition">
+            SERVICES
+          </li>
+          <li className="cursor-pointer hover:text-pink-500 transition">
+            PAGES
+          </li>
+          <li className="cursor-pointer hover:text-pink-500 transition">
+            GALLERY
+          </li>
+          <li className="cursor-pointer hover:text-pink-500 transition">
+            SHOP
+          </li>
+          <li className="cursor-pointer hover:text-pink-500 transition">
+            BLOGS
+          </li>
+          <li className="cursor-pointer hover:text-pink-500 transition">
+            CONTACTS
+          </li>
+        </ul>
 
-      <div className="flex md:hidden items-center justify-between w-full">
-        <HiMenu
-          className="text-2xl text-white cursor-pointer"
-          onClick={() => setOpen(!open)}
-        />
+        <div className="flex md:hidden items-center justify-between w-full">
+          <HiMenu
+            className="text-2xl text-white cursor-pointer"
+            onClick={() => setOpen(!open)}
+          />
 
-        <div className="flex items-center gap-5 text-xl text-white">
-          <LiaSearchSolid className="cursor-pointer" />
-          <MdContentPaste className="cursor-pointer" />
+          <div className="flex items-center gap-5 text-xl text-white">
+            <LiaSearchSolid className="cursor-pointer" />
+            <MdContentPaste className="cursor-pointer" />
+          </div>
         </div>
-      </div>
 
-      <div className="hidden md:flex items-center gap-8 mr-14 text-lg text-white">
-        <LiaSearchSolid className="cursor-pointer size-6 hover:text-gray-200 transition" />
-        <MdContentPaste className="cursor-pointer size-5 hover:text-gray-200 transition" />
+        <div className="hidden md:flex items-center gap-8 text-lg text-white">
+          <LiaSearchSolid className="cursor-pointer size-6 hover:text-gray-200 transition" />
+          <MdContentPaste className="cursor-pointer size-5 hover:text-gray-200 transition" />
+        </div>
       </div>
 
       {open && (

@@ -4,6 +4,10 @@ import Navbar from './Components/Navbar'
 import Hero from './Components/Hero'
 import Welcome from './Components/Welcome'
 import Services from './Components/Services'
+import Gallery from './Components/Gallery'
+import User from './Components/User'
+import Pricing from './Components/Pricing'
+import Experts from './Components/Experts'
 
 
 const App = () => {
@@ -14,6 +18,10 @@ const App = () => {
      <Hero/>
      <Welcome/>
      <Services/>
+     <Gallery/>
+     <User/>
+     <Pricing/>
+     <Experts/>
     </div>
   )
 }

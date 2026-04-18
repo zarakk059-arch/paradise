@@ -39,7 +39,7 @@ const Hero = () => {
   };
 
   return (
-    <div className="relative w-full h-95 md:h-150 overflow-hidden flex items-center mt-0 md:mt-0 z-0">
+    <div className="relative w-full h-95 md:h-143 overflow-hidden flex items-center z-0">
       <div className="absolute left-3 md:left-5 z-20 hidden md:block">
         <HiOutlineArrowSmallLeft
           onClick={prevSlide}
@@ -63,26 +63,30 @@ const Hero = () => {
             key={i}
             className="w-full shrink-0 relative flex flex-col md:flex-row items-center justify-center"
           >
-            <div className="w-full md:w-1/2 flex justify-center order-1 md:order-2">
-              <img
-                src={slide.img}
-                alt="hero"
-                className="absolute inset-0 w-full h-full object-cover md:relative md:w-155.5 md:h-auto md:object-contain"
-              />
-            </div>
+            <div className="max-w-7xl mx-auto w-full flex flex-col md:flex-row items-center justify-center px-6 md:px-14 gap-6 md:gap-10">
+              <div className="w-full md:w-1/2 flex justify-center order-1 md:order-2">
+                <img
+                  src={slide.img}
+                  alt="hero"
+                  className="absolute inset-0 w-full h-full object-cover md:relative md:w-155.5 md:h-auto md:object-contain"
+                />
+              </div>
 
-            <div className="relative z-10 w-full md:w-1/2 px-6 md:px-10 lg:px-20 text-gray-700 order-2 md:order-1 flex flex-col items-center justify-center text-center md:text-left md:items-start">
-              <p className="font-semibold text-sm md:text-base">Beauty & Spa</p>
+              <div className="relative z-10 w-full md:w-1/2 text-gray-700 order-2 md:order-1 flex flex-col items-center justify-center text-center md:text-left md:items-start">
+                <p className="font-semibold text-sm md:text-base">
+                  Beauty & Spa
+                </p>
 
-              <h1 className="text-3xl md:text-5xl lg:text-6xl font-sans leading-tight whitespace-nowrap">
-                {slide.title}
-              </h1>
+                <h1 className="text-3xl md:text-5xl lg:text-6xl font-sans leading-tight whitespace-nowrap">
+                  {slide.title}
+                </h1>
 
-              <p className="max-w-sm text-sm md:text-base">{slide.desc}</p>
+                <p className="max-w-sm text-sm md:text-base">{slide.desc}</p>
 
-              <button className="hidden md:inline-block mt-6 md:mt-8 px-4 py-2.5 rounded-xl text-white font-semibold bg-linear-to-r from-pink-300 to-blue-300">
-                REQUEST AN APPOINTMENT
-              </button>
+                <button className="hidden md:inline-block mt-6 md:mt-8 px-4 py-2.5 rounded-xl text-white font-semibold bg-linear-to-r from-pink-300 to-blue-300">
+                  REQUEST AN APPOINTMENT
+                </button>
+              </div>
             </div>
 
             <div className="absolute bottom-4 left-1/2 -translate-x-1/2 md:hidden z-20">
