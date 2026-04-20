@@ -8,6 +8,9 @@ import Gallery from './Components/Gallery'
 import User from './Components/User'
 import Pricing from './Components/Pricing'
 import Experts from './Components/Experts'
+import Appointment from './Components/Appointment'
+import Blog from './Components/Blog'
+import Newslatter from './Components/Newslatter'
 
 
 const App = () => {
@@ -22,6 +25,9 @@ const App = () => {
      <User/>
      <Pricing/>
      <Experts/>
+     <Appointment/>
+     <Blog/>
+     <Newslatter/>
     </div>
   )
 }

@@ -16,8 +16,8 @@ const team = [
 
 const Experts = () => {
   return (
-    <div className="bg-gray-100 py-12 sm:py-16 lg:py-24 px-4 sm:px-6 lg:px-10">
-      <div className="text-center mb-12 sm:mb-16">
+    <div className="bg-gray-100 py-12 sm:py-16 lg:py-20 px-4 sm:px-6 lg:px-24">
+      <div className="text-center mb-25">
         <p className="text-pink-400 tracking-widest text-xs sm:text-sm mb-2">
           Our Staff
         </p>
@@ -29,10 +29,10 @@ const Experts = () => {
 
       <div
         className="
-        max-w-7xl mx-auto
-        grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4
-        gap-y-16
-      "
+          max-w-7xl mx-auto
+          grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4
+          gap-y-16
+        "
       >
         {team.map((member, index) => (
           <div
@@ -40,7 +40,7 @@ const Experts = () => {
             className="
               relative bg-white rounded-2xl shadow-md
               text-center group
-              pt-20 pb-10 px-4
+              pt-16 pb-10 px-4
               w-full max-w-55 mx-auto
               transition duration-300
               hover:bg-linear-to-r hover:from-pink-100 hover:to-blue-100
@@ -48,12 +48,12 @@ const Experts = () => {
           >
             <div
               className="
-              absolute -top-12 left-1/2 -translate-x-1/2
-              w-24 h-24 sm:w-28 sm:h-28
-              rounded-full overflow-hidden
-              border-4 border-white shadow-lg bg-white
-              group-hover:scale-110 transition
-            "
+                absolute -top-14 left-1/2 -translate-x-1/2
+                w-28 h-28 sm:w-32 sm:h-32
+                rounded-full overflow-hidden
+                border-4 border-white shadow-lg bg-white
+                group-hover:scale-110 transition duration-300
+              "
             >
               <img
                 src={member.img}
@@ -62,7 +62,7 @@ const Experts = () => {
               />
             </div>
 
-            <h2 className="mt-10 text-sm sm:text-base font-semibold text-gray-800">
+            <h2 className="mt-6 text-sm sm:text-base font-semibold text-gray-800">
               {member.name}
             </h2>
 
@@ -70,7 +70,7 @@ const Experts = () => {
               {member.role}
             </p>
 
-            <div className="flex justify-center gap-3 mt-5 text-lg sm:text-xl">
+            <div className="flex justify-center gap-3 mt-4 text-lg sm:text-xl">
               <CiFacebook className="cursor-pointer hover:text-pink-400 hover:scale-110 transition" />
               <CiTwitter className="cursor-pointer hover:text-blue-400 hover:scale-110 transition" />
               <FaGooglePlusG className="cursor-pointer hover:text-pink-300 hover:scale-110 transition" />
