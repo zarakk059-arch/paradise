@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import img1 from "../../public/slider-img02.jpg";
-import img2 from "../../public/slider-img02.jpg";
+import img1 from "../../../public/slider-img02.jpg";
+import img2 from "../../../public/slider-img02.jpg";
 import {
   HiOutlineArrowSmallLeft,
   HiOutlineArrowSmallRight,

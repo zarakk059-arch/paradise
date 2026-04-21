@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../../public/logo.png";
+import Logo from "../../../public/logo.png"
 import { IoLocationOutline } from "react-icons/io5";
 import { FiMail } from "react-icons/fi";
 
@@ -8,7 +8,7 @@ const Top = () => {
     <div className="w-full px-4 py-4 mt-1">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <a href="/" className="mx-auto md:mx-9">
-          <img src={Logo} alt="Logo" className="w-32 md:w-45 cursor-pointer" />
+          <img src="/logo.png" alt="Logo" className="w-32 md:w-45 cursor-pointer" />
         </a>
 
         <div className="hidden md:flex items-center gap-10 lg:gap-16">

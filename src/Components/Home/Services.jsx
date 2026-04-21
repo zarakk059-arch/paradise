@@ -1,8 +1,8 @@
 import React from "react";
-import img1 from "../../public/services-img01.jpg";
-import img2 from "../../public/services-img02.jpg";
-import img3 from "../../public/services-img03.jpg";
-import img4 from "../../public/services-img04.jpg";
+import img1 from "../../../public/services-img01.jpg";
+import img2 from "../../../public/services-img02.jpg";
+import img3 from "../../../public/services-img03.jpg";
+import img4 from "../../../public/services-img04.jpg";
 
 const Services = () => {
   const services = [

@@ -1,10 +1,10 @@
 import React from "react";
-import img1 from "../../public/gallery-img05.jpg";
-import img2 from "../../public/gallery-img06.jpg";
-import img3 from "../../public/gallery-img07.jpg";
-import img4 from "../../public/gallery-img08.jpg";
-import img5 from "../../public/gallery-img09.jpg";
-import img6 from "../../public/gallery-img10.jpg";
+import img1 from "../../../public/gallery-img05.jpg";
+import img2 from "../../../public/gallery-img06.jpg";
+import img3 from "../../../public/gallery-img07.jpg";
+import img4 from "../../../public/gallery-img08.jpg";
+import img5 from "../../../public/gallery-img09.jpg";
+import img6 from "../../../public/gallery-img10.jpg";
 
 const Gallery = () => {
   const tabs = [

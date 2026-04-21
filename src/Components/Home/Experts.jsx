@@ -2,10 +2,10 @@ import React from "react";
 import { CiFacebook, CiTwitter } from "react-icons/ci";
 import { FaGooglePlusG, FaLinkedinIn } from "react-icons/fa";
 
-import img1 from "../../public/team-img01.jpg";
-import img2 from "../../public/team-img02.jpg";
-import img3 from "../../public/team-img03.jpg";
-import img4 from "../../public/team-img04.jpg";
+import img1 from "../../../public/team-img01.jpg";
+import img2 from "../../../public/team-img02.jpg";
+import img3 from "../../../public/team-img03.jpg";
+import img4 from "../../../public/team-img04.jpg";
 
 const team = [
   { img: img1, name: "Jackson Nash", role: "Massagist" },

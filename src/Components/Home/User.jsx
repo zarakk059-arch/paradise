@@ -2,9 +2,9 @@ import React from "react";
 import { SiComma } from "react-icons/si";
 import { FaRegStar } from "react-icons/fa";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
-import img1 from "../../public/testimonial-img01.jpg";
-import img2 from "../../public/testimonial-img02.jpg";
-import img3 from "../../public/testimonial-img03.jpg";
+import img1 from "../../../public/testimonial-img01.jpg";
+import img2 from "../../../public/testimonial-img02.jpg";
+import img3 from "../../../public/testimonial-img03.jpg";
 
 const User = () => {
   return (

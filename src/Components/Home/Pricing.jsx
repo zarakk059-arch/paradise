@@ -1,8 +1,8 @@
 import React from "react";
-import img1 from "../../public/pricing-img01.jpg";
-import img2 from "../../public/pricing-img02.jpg";
-import img3 from "../../public/pricing-img03.jpg";
-import img4 from "../../public/pricing-img04.jpg";
+import img1 from "../../../public/pricing-img01.jpg";
+import img2 from "../../../public/pricing-img02.jpg";
+import img3 from "../../../public/pricing-img03.jpg";
+import img4 from "../../../public/pricing-img04.jpg";
 
 const plans = [
   {
