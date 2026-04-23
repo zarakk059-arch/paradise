@@ -34,7 +34,6 @@ const plans = [
 const Pricing = () => {
   return (
     <div className="bg-white py-16 sm:py-20 lg:py-24 px-4 sm:px-6 lg:px-10">
-      {/* HEADER */}
       <div className="max-w-7xl mx-auto text-center mb-12 sm:mb-16">
         <p className="text-pink-400 tracking-widest text-xs sm:text-sm mb-2">
           SPA CENTER
@@ -47,12 +46,14 @@ const Pricing = () => {
         <div className="w-16 sm:w-20 h-0.5 bg-pink-300 mx-auto mt-5 sm:mt-6"></div>
       </div>
 
-      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 place-items-center">
+      <div className="max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8 place-items-stretch">
         {plans.map((plan, index) => (
           <div
             key={index}
             className="
-              w-full max-w-70 sm:max-w-65
+              w-full 
+              sm:max-w-sm 
+              lg:max-w-xs
               rounded-2xl shadow-md transition duration-300
               bg-gray-100 hover:bg-linear-to-r hover:from-pink-200 hover:to-blue-200
               group overflow-hidden text-center
@@ -61,11 +62,11 @@ const Pricing = () => {
             <div className="flex justify-center pt-6 sm:pt-8">
               <div
                 className="
-                w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36
-                rounded-full flex items-center justify-center
-                bg-gray-100 border-4 border-white shadow-lg
-                group-hover:scale-105 transition
-              "
+                  w-28 h-28 sm:w-32 sm:h-32 md:w-36 md:h-36
+                  rounded-full flex items-center justify-center
+                  bg-gray-100 border-4 border-white shadow-lg
+                  group-hover:scale-105 transition
+                "
               >
                 <img
                   src={plan.img}

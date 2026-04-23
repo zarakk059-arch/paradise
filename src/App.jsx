@@ -4,6 +4,11 @@ import { AnimatePresence, motion } from "framer-motion";
 
 import Home from "./Pages/Home";
 import Service from "./Pages/Service";
+import Pagess from "./Pages/Pagess";
+import Gallery from "./Pages/Gallery";
+import Blog from "./Pages/Blogs";
+import Contact from "./Pages/Contact";
+import Shop from "./Pages/Shop";
 import ScrollToTop from "./Components/Scroll/ScrollToTop";
 
 const PageWrapper = ({ children }) => {
@@ -25,7 +30,6 @@ const AnimatedRoutes = () => {
   return (
     <AnimatePresence mode="wait">
       <Routes location={location} key={location.pathname}>
-
         <Route
           path="/"
           element={
@@ -45,16 +49,47 @@ const AnimatedRoutes = () => {
         />
 
         <Route
-          path="*"
+          path="pages"
           element={
             <PageWrapper>
-              <h1 className="text-center text-3xl mt-20">
-                404 Page Not Found
-              </h1>
+              <Pagess />
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="blogs"
+          element={
+            <PageWrapper>
+              <Blog />
             </PageWrapper>
           }
         />
 
+        <Route
+          path="gallery"
+          element={
+            <PageWrapper>
+              <Gallery />
+            </PageWrapper>
+          }
+        />
+
+        <Route
+          path="contact"
+          element={
+            <PageWrapper>
+              <Contact />
+            </PageWrapper>
+          }
+        />
+        <Route
+          path="shop"
+          element={
+            <PageWrapper>
+              <Shop />
+            </PageWrapper>
+          }
+        />
       </Routes>
     </AnimatePresence>
   );
@@ -63,7 +98,6 @@ const AnimatedRoutes = () => {
 const App = () => {
   return (
     <BrowserRouter>
-      {/* ✅ THIS FIXES SCROLL POSITION */}
       <ScrollToTop />
 
       <AnimatedRoutes />
